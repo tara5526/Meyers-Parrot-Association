@@ -1,0 +1,198 @@
+
+* { box-sizing: border-box; }
+
+/*setting background colour for all the pages as black*/
+body {
+	background-color: black;
+}
+
+/*this code is to make the animation work*/
+.animate{      		/*establishing duration and name of the animation */
+  -webkit-animation-name: zoomInLeft;
+  animation-name: zoomInLeft;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomInLeft {
+  0% {
+  opacity: 0;						/*establishing where the heading should move first*/
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+  transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+  transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+  }
+  @keyframes zoomInLeft {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+  transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+  opacity: 1;							/*establishing where the heading should end*/
+  -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+  transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+  }
+
+
+
+/*making the H1 heading of each page white, big, centered and not bold*/
+h1 {
+	font-family: 'Great Vibes', /*fallback font */ century gothic;
+	text-align: center;
+	color: white;
+	background-color: rgb(64, 224, 208);
+	padding: 20px;		/*adding padding and margins to format the heading*/
+	margin: 0;
+	font-size: 60px;
+	font-weight: normal;
+
+}
+
+/*making the header have a different background colour to the rest of the body, and making display inline-block so that it adjusts to screen size*/
+header {
+	background-color: rgb(64, 224, 208);
+	display: block;
+	padding: 20px;
+	text-align: center;
+	
+}
+
+
+
+/*making the links to other pages matching and centered*/
+a {
+	text-decoration: none;
+	color: white;
+	padding-left: 50px;
+	padding-right: 90px;
+	font-family: century gothic;
+	font-size: 30px;
+	
+}
+
+
+
+/*making the aside text white, centered and not too close to the sides.*/
+aside {
+	color: white;
+	padding-top: 30px;
+	padding-left: 80px;
+	padding-right: 80px;	
+	text-align: center;
+	font-family: century gothic;	
+	font-size: 22px;
+}
+
+
+h3 {
+	color: white;
+	text-align: center;
+	font-family: century gothic;
+	font-size: 24px;	
+}
+
+p {
+	color: white;
+	font-family: century gothic;
+}
+
+/* this will place the table in the centre of the page, and not too close to the sides */
+.buytable {
+	padding-left: 190px;
+	padding-right: 190px;
+}
+
+h2 {
+	font-weight: normal;
+	color: white;
+	font-family: century gothic;
+}
+
+/*making the button invisible*/
+.button > ul {
+	display: none;
+	color: white;
+	font-family: century gothic;
+	text-decoration: underline;
+}
+
+
+/*making it visible when the mouse hovers over it*/
+.button:hover > ul {
+	display: inline-block;
+}
+
+/*making the element centered and not too close to the sides*/
+.cart {
+	padding-left: 160px;
+	padding-right: 160px;
+}
+
+/*making the checkout button and promo code on the far right side of the page*/
+.align {
+	text-align: right;
+	padding-right: 160px;
+}
+
+/*making the link look more like a link (i had specified for the other links to look like titles, so i just had to override some of that code)*/
+.backtobuy > a {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.backtobuy {
+	text-align: right;
+	padding-right: 100px;
+}
+
+table {
+	color: white;
+	font-family: century gothic;
+	border-collapse: collapse;
+}
+
+body {
+	text-align:center;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+table, th, td {
+  border: 1px solid rgb(64, 224, 208);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+footer {
+	background-color: rgb(64, 224, 208);
+	display: block;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	font-family: century gothic;	
+}
+
+
+
+
+
